@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JARVIS — Private, local-first AI assistant</title>
+<meta name="description" content="JARVIS is a private, local-first AI assistant for email, calendar, notes, and everyday work.">
+<link rel="icon" href="icon.png">
+<style>
+  :root{--blue:#4d6bfe;--ink:#eef3fb;--muted:#9aabc0;--line:#203249;--panel:#0c1623;--bg:#07101b}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1100px 650px at 70% -10%,#142a4a 0,transparent 60%),var(--bg);
+    color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  a{color:#9db5ff}
+  .wrap{max-width:900px;margin:0 auto;padding:28px 22px 60px}
+  header{display:flex;align-items:center;gap:12px;padding:8px 0 34px}
+  .mark{width:46px;height:46px;border-radius:12px;background:var(--blue);display:grid;place-items:center;
+    box-shadow:0 12px 28px rgba(77,107,254,.28)}
+  .mark svg{width:30px;height:30px}
+  .brand{font-weight:700;letter-spacing:.14em;font-size:13px}
+  .brand span{display:block;color:var(--muted);font-weight:500;letter-spacing:.04em;font-size:11px;margin-top:2px}
+  .hero{padding:22px 0 30px}
+  .kicker{font:11px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.22em;color:#6f93ff;text-transform:uppercase}
+  h1{font-size:clamp(40px,7vw,68px);line-height:1.02;letter-spacing:-.04em;margin:12px 0 14px}
+  .lede{font-size:19px;color:#c2d0e2;max-width:700px;margin:0}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:34px 0 10px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .card{background:linear-gradient(180deg,#0d1928,#0a1420);border:1px solid var(--line);border-radius:16px;padding:20px}
+  .card h2{font-size:15px;margin:0 0 6px}
+  .card p{margin:0;color:var(--muted);font-size:13.5px}
+  .links{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0}
+  .btn{display:inline-block;padding:10px 15px;border-radius:10px;border:1px solid #2b4d77;background:#0d1b2c;
+    color:#dbe6f5;text-decoration:none;font-size:13px;font-weight:600}
+  .btn.primary{background:rgba(77,107,254,.16);border-color:rgba(77,107,254,.6);color:#c9d4ff}
+  footer{border-top:1px solid var(--line);margin-top:44px;padding-top:18px;color:#70859c;font-size:12px}
+  footer a{color:#8fa6c2}
+  .legal{max-width:760px}
+  .legal h1{font-size:clamp(32px,5vw,46px);margin-bottom:8px}
+  .legal h2{font-size:19px;margin:30px 0 8px}
+  .legal p,.legal li{color:#c0cee0;font-size:15px}
+  .legal ul{padding-left:20px}
+  .legal .meta{color:var(--muted);font-size:13px;margin:0 0 20px}
+  .note{border-left:3px solid var(--blue);background:#0b1828;padding:12px 15px;border-radius:0 10px 10px 0;
+    color:#cdd9ea;font-size:13.5px;margin:18px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="27" stroke="#fff" stroke-width="3" opacity=".4"/><circle cx="32" cy="32" r="18" fill="#07101b"/><path d="M38 17v19c0 7-5 11-11 11-5 0-8-2-10-6" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>
+    </div>
+    <div class="brand">J.A.R.V.I.S.<span>Personal AI assistant</span></div>
+  </header>
+
+  <main class="hero">
+    <div class="kicker">Private · Local-first · Personal</div>
+    <h1>Your own AI assistant,<br>running on your own machine.</h1>
+    <p class="lede">JARVIS reads the mail and calendar you connect, remembers your notes, runs focused missions, and speaks the result — with your data staying on your computer and in your control.</p>
+  </main>
+
+  <section class="grid" aria-label="What JARVIS does">
+    <div class="card"><h2>Email &amp; calendar</h2><p>Search, read, summarize and draft — directly through the Google APIs you authorize.</p></div>
+    <div class="card"><h2>Missions</h2><p>Plan, approve, run and verify real jobs such as website audits and review research.</p></div>
+    <div class="card"><h2>Local control</h2><p>Keys and OAuth tokens are stored locally. Nothing is sold, advertised or shared.</p></div>
+  </section>
+
+  <div class="links">
+    <a class="btn primary" href="privacy.html">Privacy policy</a>
+    <a class="btn" href="terms.html">Terms of service</a>
+    <a class="btn" href="mailto:zmrasim@gmail.com">Contact</a>
+  </div>
+
+  <footer>
+    JARVIS is a personal, locally installed application. Effective November 20, 2026.
+    <br><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:zmrasim@gmail.com">zmrasim@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
